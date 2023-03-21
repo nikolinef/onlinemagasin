@@ -12,14 +12,17 @@
     <section class="forside">
 
         <header>
+            <nav>
                 <a href="">Badesteder</a>
                 <a href="vinterbadning.html">Vinterbadning</a>
                 <a href="">Oplevelser</a>
                 <a href="">Mindset</a>
-
-                <div id="søgefelt">
+                
+                <div class="søgefelt">
                     <img src="figurer/forstørrelsesglas.png" alt="forstørrelsesglas" height="50px">
                 </div>
+            </nav>
+                
         </header>
 
         <div class="title">
@@ -38,10 +41,98 @@
         <video id="video" autoplay muted loop plays-inline>
             <source src="images/forsidevideo720p.mp4" type="video/mp4">
         </video>
-   
     </section>
 
-    <!--<img src="images/bænk.jpg" alt="bænk på badebro">-->
+    <section class="artikelside">
+
+        <div class="overskriftblå">
+            <img src="figurer/logogrøn.png" alt="logo" height="60px">
+            <!--Indsæt pil tilbage ikon-->
+            <h1>Badesteder i Danmark</h1>
+        </div>
+
+        <article>
+            
+
+            <div id="danmarkskort">
+            <img src="figurer/danmark.png" alt="logo" height="500px">
+            </div>
+
+            
+                <div id="allestedersøg">
+                    <ul id="allecheckboks">
+                        <li> <input type="checkbox" name="Allesteder" value="Allesteder">Alle steder</li>
+                    </ul>
+
+                    <div class="søgefelt">
+                        <img src="figurer/forstørrelsesglas.png" alt="forstørrelsesglas" height="35px">
+                    </div>
+                </div>
+
+                <section id="valgmuligheder">
+                    <ul>
+                        <h3>Område</h3>
+                        <li> <input type="checkbox" name="område" value="Sydjylland">Sydjylland</li>
+                        <li> <input type="checkbox" name="område" value="Midtjylland">Midtjylland</li>
+                        <li> <input type="checkbox" name="område" value="Nordjylland">Nordjylland</li>
+                        <li> <input type="checkbox" name="område" value="Fyn">Fyn</li>
+                        <li> <input type="checkbox" name="område" value="Sjælland">Sjælland</li>
+                        <li> <input type="checkbox" name="område" value="Øer">Øer</li>
+                    </ul>
+                
+                    <ul> 
+                        <h3>Faciliteter</h3>
+                        <li> <input type="checkbox" name="faciliteter" value="vinterbadning">Vinterbadning</li>
+                        <li> <input type="checkbox" name="faciliteter" value="sauna">Sauna</li>
+                        <li> <input type="checkbox" name="faciliteter" value="badebro">Badebro</li>
+                        <li> <input type="checkbox" name="faciliteter" value="toiletter">Toiletter</li>
+                        <li> <input type="checkbox" name="faciliteter" value="ishus">Ishus</li>
+                        <li> <input type="checkbox" name="faciliteter" value="boldbane">Boldbane</li>
+                        <li> <input type="checkbox" name="faciliteter" value="beachvolley">Beachvolley</li>
+                        <li> <input type="checkbox" name="faciliteter" value="udendørsfitness">Udenførs fitness</li>
+                    </ul>
+                
+                    <ul>
+                        <h3>Miljø</h3>
+                        <li> <input type="checkbox" name="miljø" value="sandbund">Sandbund</li>
+                        <li> <input type="checkbox" name="miljø" value="saltvand">Saltvand</li>
+                        <li> <input type="checkbox" name="miljø" value="ferskvand">Ferskvand</li>
+                        <li> <input type="checkbox" name="miljø" value="stenbund">Stenbund</li>
+                        <li> <input type="checkbox" name="miljø" value="søer">Søer</li>
+                        <li> <input type="checkbox" name="miljø" value="rev">Rev</li>
+                    </ul>
+                </section>
+                
+        </article>
+
+        <section id="sikkerhed">
+            <h2>Sikkerhed først!</h2>
+                <img src="images/redningskrans.jpg" alt="redningskrans" height="190px">
+                <p>Hav respekt for vandet<br>
+                Følg rådende fra Rådet for Større Bade- og Vandsikkerhed på<br>
+                <a href="https://www.badesikkerhed.dk/baderaad-sommer/">www.badesikkerhed.dk</a>
+                </p>
+        </section>
+    
+    </section>
+
+    <footer>
+        <div class="footerlogo">
+            <h1 id="logotitle">Badesteder<br>i Danmark</h1>
+            <img src="figurer/logogrønlokation.png" alt="logo" height="90px">
+        </div>
+
+        <div class="kontaktinfo">
+            <img src="figurer/brev.png" alt="brevikon" height=" 80px">
+            <h5>Kontakt os</h5>
+            <img src="figurer/omoshvid.png" alt="infoikon" height="80px"> 
+            <h5>Om os</h5>
+        </div>
+    </footer>
+
+    
+
+    
 
 </body>
 </html>
