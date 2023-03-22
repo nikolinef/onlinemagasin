@@ -13,7 +13,7 @@
 
         <header>
             <nav>
-                <a href="">Badesteder</a>
+                <a href="#overskriftblå">Badesteder</a>
                 <a href="vinterbadning.html">Vinterbadning</a>
                 <a href="">Oplevelser</a>
                 <a href="">Mindset</a>
@@ -43,19 +43,19 @@
         </video>
     </section>
 
-    <section class="artikelside">
+    <section id="forsidebaggrund">
 
-        <div class="overskriftblå">
+        <div id="overskriftblå">
             <img src="figurer/logogrøn.png" alt="logo" height="60px">
-            <!--Indsæt pil tilbage ikon-->
             <h1>Badesteder i Danmark</h1>
         </div>
 
         <article>
             
-
             <div id="danmarkskort">
-            <img src="figurer/danmark.png" alt="logo" height="500px">
+                <a href="moesgaardstrand.html">
+                    <img src="figurer/danmarklokationer.png" alt="logo" height="500px">
+                </a>
             </div>
 
             
@@ -70,7 +70,7 @@
                 </div>
 
                 <section id="valgmuligheder">
-                    <ul>
+                    <ul class="emneliste">
                         <h3>Område</h3>
                         <li> <input type="checkbox" name="område" value="Sydjylland">Sydjylland</li>
                         <li> <input type="checkbox" name="område" value="Midtjylland">Midtjylland</li>
@@ -80,7 +80,7 @@
                         <li> <input type="checkbox" name="område" value="Øer">Øer</li>
                     </ul>
                 
-                    <ul> 
+                    <ul class="emneliste"> 
                         <h3>Faciliteter</h3>
                         <li> <input type="checkbox" name="faciliteter" value="vinterbadning">Vinterbadning</li>
                         <li> <input type="checkbox" name="faciliteter" value="sauna">Sauna</li>
@@ -92,7 +92,7 @@
                         <li> <input type="checkbox" name="faciliteter" value="udendørsfitness">Udenførs fitness</li>
                     </ul>
                 
-                    <ul>
+                    <ul class="emneliste">
                         <h3>Miljø</h3>
                         <li> <input type="checkbox" name="miljø" value="sandbund">Sandbund</li>
                         <li> <input type="checkbox" name="miljø" value="saltvand">Saltvand</li>
@@ -117,8 +117,8 @@
     </section>
 
     <footer>
-        <div class="footerlogo">
-            <h1 id="logotitle">Badesteder<br>i Danmark</h1>
+        <div id="footerlogo">
+            <h1>Badesteder<br>i Danmark</h1>
             <img src="figurer/logogrønlokation.png" alt="logo" height="90px">
         </div>
 
