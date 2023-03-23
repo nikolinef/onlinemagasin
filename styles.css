@@ -1,0 +1,457 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Sofia Sans', sans-serif; /*sans-serif, hvis browseren ikke kan loade Sofia Sans*/
+}
+
+.forside {
+    position: relative;
+    right: 0;
+    width: 100%;
+    min-height: 100vh; /*Viewport Height - videoen bliver ikke mindre*/
+    
+}
+
+nav {
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav #badesteder{
+    color: white;
+    font-size: 26pt;
+    font-weight: 400;
+}
+
+nav a:link{
+    text-decoration: none;
+}
+
+nav .menu{
+    color: white;
+    font-size: 26pt;
+    font-weight: 200;
+}
+
+nav .menu:hover{
+    color: white;
+    font-size: 26pt;
+    font-weight: 400;
+}
+
+.forside header .søgefelt {
+    width: 250px;
+    height: 50px;
+    background-color: white;
+    opacity: 0.75;
+    z-index: 30;
+    position: absolute;
+    right: 60px;
+    top: 100px;
+    border-radius: 5px;
+}
+
+.title{ 
+    font-size: 24pt;
+    font-weight: 300;
+    height: 500px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+#videofooter{
+    width: 100%;
+    padding: 20px 0px;
+    display: flex; /* for at få kontakt info til at være flex-item*/
+}
+
+.kontaktinfo {
+    margin-left: auto; /* margin-left er auto for at få boksen væk fra playpause*/
+}
+
+.forside video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /*for at få whitespace væk fra oven og neden*/
+    z-index: -20;
+}
+
+#forsidebaggrund {
+    background-image: url(images/bænk.jpg);
+    padding-bottom: 60px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#piltilbage {
+    position: absolute; /*for at få pilen helt ud til venstre*/
+    margin: 85px 0 0 10px;
+}
+
+#overskrift{
+    text-align: center;
+    padding-top: 10px;
+}
+
+#overskrift h1{
+    color: #04497A;
+    font-weight: 200;
+    font-size: 40pt;
+    text-align: center;
+}
+
+#overskrift h2{
+    color: #04497A;
+    font-weight: 200;
+    font-size: 26pt;
+    text-align: center;
+}
+
+#overskrift a:link{
+    color: #04497A;
+    text-decoration: none;
+}
+
+#overskrift a:visited{
+    color: #04497A;
+    text-decoration: none;
+}
+
+.underartikler {
+    margin: 10px 170px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.underartikler h2 a:hover{
+    font-weight: 400;
+}
+
+.underartikler #valgtartikel {
+    font-weight: 400;
+}
+
+article {
+    background: rgba(256, 256, 256, 0.7); /*for kun at gøre <article> gennemsigtig uden childelementerne*/
+    margin: 0px 170px 40px 170px; /*for at få luft i siden*/
+}
+
+#danmarkskort{
+    text-align: center;
+    padding: 20px 100px;
+    opacity: 1;
+    z-index: 20;
+}
+
+#danmarkskort img{
+    border-radius: 5px;
+    opacity: 1;
+}
+
+#allestedersøg {
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+    padding-bottom: 20px;
+}
+
+#allecheckboks{
+    padding: 7px 0px 7px 100px;
+    list-style: none;
+    color: #04497A;
+    font-weight: 200;
+    font-size: 16pt;
+}
+
+.søgefelt{
+    width: 200px;
+    height: 38px;
+    background-color: rgba(128, 128, 128, 0.25);
+    z-index: 30;
+    border-radius: 5px;
+    margin-left: auto;
+    
+}
+
+#valgmuligheder {
+    background-color: white;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+    
+    
+}
+
+.emneliste h3 {
+    color: #04497A;
+    font-weight: 200;
+    font-size: 22pt;
+    padding-bottom: 15px;
+}
+
+.emneliste {
+    padding: 20px 0px;
+}
+
+.emneliste li {
+    list-style: none;
+    color: #04497A;
+    font-weight: 200;
+    font-size: 16pt;
+    padding: 7px 0px;
+}
+
+#sikkerhed{
+    background: rgba(256, 256, 256, 0.5);
+    text-align: center;
+    color: #04497A;
+    margin: 40px 170px 0 170px;
+}
+
+#sikkerhed h2{
+    padding: 20px 0 10px 0;
+    font-weight: 300;
+    font-size: 28pt;
+}
+
+#sikkerhed p{
+    padding: 10px 0 20px 0;
+    font-weight: 200;
+    font-size: 18pt;
+}
+
+#sikkerhed a:visited{
+    color: #04497A;
+}
+
+#sikkerhed img{
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #5CA9D4;
+    display: flex;
+    padding: 30px 60px 30px 100px;
+    justify-content: space-around;
+    box-shadow: inset 00px 10px 100px 1px black;
+}
+
+#footerlogo{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;    
+}
+
+#footerlogo h1{
+    color: white;
+    font-weight: 300;
+}
+
+#footerlogo a:link{
+    text-decoration: none;
+}
+
+#footerlogo a:visited{
+    text-decoration: none;
+}
+
+.kontaktinfo {
+    display: flex;
+    align-items: center;
+}
+
+.kontaktinfo a:link{
+    text-decoration: none;
+}
+
+.kontaktinfo a:visited{
+    text-decoration: none;
+}
+
+.kontaktinfo div {
+    flex-wrap: wrap; /*for at få teksten til at stå under ikonerne*/
+    flex-direction: column;
+    
+}
+
+.kontaktinfo h5{
+    color: white;
+    font-weight: 200;
+    font-size: 18pt;
+    padding: 2px 0px;
+    text-align: center;
+}
+
+/*styles til moesgaard*/
+
+#moesgaardbaggrund{
+    background-image: url(images/moesgaardstrand1.jpg);
+    padding-bottom: 60px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#adresse{
+    text-align: center;
+    padding: 20px;
+}
+
+#adresse img{
+    border-radius: 5px;
+}
+
+#adresse h4{
+    color: #04497A;
+    font-weight: 200;
+    font-size: 16pt;
+    line-height: 26pt;
+}
+
+#beskrivelse {
+    color: #04497A;
+    padding: 10px 100px;
+    font-size: 16pt;
+    font-weight: 200;
+}
+
+#trebilleder {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/*styles til vinterbadning*/
+
+#vinterbadningbaggrund{
+    background-image: url(images/IMG_0223.JPG);
+    padding-bottom: 60px;
+    background-size: cover;
+    background-position: -670px, 0px;
+    background-repeat: no-repeat;
+}
+
+#vinterbadningbaggrund #overskrift h1{
+    color: white;
+}
+
+#vinterbadningbaggrund #overskrift h2{
+    color: white;
+}
+
+#vinterbadningbaggrund .underartikler h2 a:link{
+    color: white;
+    text-decoration: none;
+}
+
+#vinterbadningbaggrund .underartikler h2 a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+
+#brødtekst {
+    padding: 20px 170px;
+    color: #04497A;
+}
+
+h3 {
+    font-size: 28pt;
+    font-style: italic;
+    font-weight: 200;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+h4 {
+    font-size: 22pt;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+h5 {
+    font-size: 16pt;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-weight: 300;
+}
+
+p {
+    font-weight: 200;
+    font-size: 14pt;
+    padding-bottom: 5px;
+    color: #04497A;
+}
+
+h6 {
+    font-size: 14pt;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-weight: 300;
+}
+
+#brødtekst a:link{
+    color: #04497A;
+}
+
+#brødtekst a:visited{
+    color: #04497A;
+}
+
+/*styles til påvirkningpåkroppen*/
+
+#brødtekst .illustration{
+    padding: 15px;
+    text-align: center;
+}
+
+#brødtekst img{
+    border-radius: 5px;
+}
+
+/*styles til mindset*/
+
+#mindsetbaggrund {
+    background-image: url(images/stjerner.jpg);
+    padding-bottom: 60px;
+    background-size: cover;
+    background-position: -250px, 0px; /*for at få stjernene ud til højre*/
+    background-repeat: no-repeat;
+}
+
+/*styles til kontakt*/
+
+#kontaktbaggrund {
+    background-image: url(images/blåmusling.jpg);
+    /*padding-bottom: 60px;*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#kontaktbaggrund #overskrift h1{
+    color: white;
+}
+
+#kontaktp {
+    height: 550px;
+    font-size: 18pt;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
