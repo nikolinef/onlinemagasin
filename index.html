@@ -13,15 +13,16 @@
 
         <header>
             <nav>
-                <a href="#overskriftblå">Badesteder</a>
-                <a href="vinterbadning.html">Vinterbadning</a>
-                <a href="">Oplevelser</a>
-                <a href="">Mindset</a>
-                
+                <a id="badesteder" href="#overskrift">Badesteder</a>
+                <a class="menu" href="vinterbadning.html">Vinterbadning</a>
+                <a class="menu" href="">Oplevelser</a>
+                <a class="menu" href="mindset.html">Mindset</a>
+            </nav>
+        
                 <div class="søgefelt">
                     <img src="figurer/forstørrelsesglas.png" alt="forstørrelsesglas" height="50px">
                 </div>
-            </nav>
+            
                 
         </header>
 
@@ -31,22 +32,35 @@
         </div>
 
         <div id="videofooter">
-            <img src="figurer/playpause.png" alt="playpause knap" height="80px">
+
+            <button id="pause" onclick="pauseFunction()">
+                <img src="figurer/playpause.png" alt="Playpause knap" height="80px">
+            </button>
+
             <div class="kontaktinfo">
-                <img src="figurer/brevgrøn.png" alt="brevicon" height=" 80px">
-                <img src="figurer/omos.png" alt="infoicon" height="80px"> 
+                <a href="kontakt.html">
+                    <img src="figurer/brevgrøn.png" alt="Brev ikon" height=" 80px">
+                </a>
+                <a href="omos.html">
+                    <img src="figurer/omos.png" alt="Info ikon" height="80px"> 
+                </a>
+
             </div>
+            
         </div>
 
         <video id="video" autoplay muted loop plays-inline>
             <source src="images/forsidevideo720p.mp4" type="video/mp4">
         </video>
+        
     </section>
 
     <section id="forsidebaggrund">
 
-        <div id="overskriftblå">
-            <img src="figurer/logogrøn.png" alt="logo" height="60px">
+        <div id="overskrift">
+            <a href="index.html">
+                <img src="figurer/logogrøn.png" alt="logo" height="80px">
+            </a>
             <h1>Badesteder i Danmark</h1>
         </div>
 
@@ -117,22 +131,48 @@
     </section>
 
     <footer>
+
         <div id="footerlogo">
-            <h1>Badesteder<br>i Danmark</h1>
-            <img src="figurer/logogrønlokation.png" alt="logo" height="90px">
+            <a href="index.html"> 
+                <h1>Badesteder<br>i Danmark</h1>
+                <img src="figurer/logogrønlokation.png" alt="logo" height="90px">
+            </a>
         </div>
 
         <div class="kontaktinfo">
-            <img src="figurer/brev.png" alt="brevikon" height=" 80px">
-            <h5>Kontakt os</h5>
-            <img src="figurer/omoshvid.png" alt="infoikon" height="80px"> 
-            <h5>Om os</h5>
+
+            <div>
+                <a href="kontakt.html"> 
+                    <img src="figurer/brev.png" alt="brevikon" height=" 80px">
+                    <h5>Kontakt os</h5>
+                </a>
+            </div>
+
+            <div> 
+                <a href="omos.html"> 
+                    <img src="figurer/omoshvid.png" alt="infoikon" height="80px"> 
+                    <h5>Om os</h5>
+                </a>
+            </div>
+
         </div>
+
     </footer>
 
-    
+    <script>
+        var video = document.getElementById("video");
+        var btn = document.getElementById("pause");
 
-    
+        function pauseFunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
+        }
+    </script>
 
 </body>
 </html>
