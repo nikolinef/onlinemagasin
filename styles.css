@@ -232,6 +232,10 @@ article {
     font-size: 18pt;
 }
 
+#sikkerhed a:link{
+    color: #04497A;
+}
+
 #sikkerhed a:visited{
     color: #04497A;
 }
